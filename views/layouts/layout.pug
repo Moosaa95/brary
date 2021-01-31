@@ -1,0 +1,22 @@
+
+doctype html
+html
+    head
+        title= title
+        
+        
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css")
+        link(rel='stylesheet', href='/stylesheets/stylee.css')
+        title Book App
+    body
+        include ../partials/_header 
+        //
+            if (hasErrors)
+            each message in error
+                h2.card-panel.red.accent-2= message  
+        
+        block content
+        
+        
+
+

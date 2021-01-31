@@ -1,0 +1,12 @@
+a(href="/") home
+h1 search Authors 
+
+form(action="/authors" method="GET")
+    label Name 
+    input(type="text", name="name" value= searchOptions.name)
+    button(typ="submit") Search
+
+br
+each author in authors 
+    div 
+        =author.name
